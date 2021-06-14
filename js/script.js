@@ -27,6 +27,19 @@ console.log(studenti);
 
 for(var i=0 ; i < studenti.length ; i++){
     console.log("studente n. " , i+1);
-        console.log("nome : ",studenti[i].nome , "  cognome  : ", studenti[i].cognome);
+    console.log("nome : ",studenti[i].nome , "  cognome  : ", studenti[i].cognome);
 }
 
+var n = prompt("inserisci il nome dello studente : ");
+var c = prompt("inserisci il cognome : ");
+var e = parseInt(prompt("inserisci l'età : "));
+
+var newStudente = {
+    nome : n,
+    cognome : c,
+    età : e, 
+};
+
+studenti.push(newStudente);
+
+console.log(studenti);

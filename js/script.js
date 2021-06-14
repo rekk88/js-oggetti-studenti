@@ -27,8 +27,6 @@ console.log(studenti);
 
 for(var i=0 ; i < studenti.length ; i++){
     console.log("studente n. " , i+1);
-    for(var k in studenti[i]){
-        console.log(k , " : ", studenti[i][k]);
-    }
+        console.log("nome : ",studenti[i].nome , "  cognome  : ", studenti[i].cognome);
 }
 

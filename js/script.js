@@ -9,8 +9,26 @@ for(var k in studente){
     console.log(k , " : ", studente[k]); //visualizza tutte le proprietà dell'oggetto
 }
 
-var studenti = [];
+var studenti = [
+    {
+        nome : "arancia",
+        cognome  : "agrume",
+        età : 13,
+    },
+    {
+        nome : "mela",
+        cognome  : "bo",
+        età : 17,
+    }
+];
 
 studenti.push(studente);
 console.log(studenti);
+
+for(var i=0 ; i < studenti.length ; i++){
+    console.log("studente n. " , i+1);
+    for(var k in studenti[i]){
+        console.log(k , " : ", studenti[i][k]);
+    }
+}
 
